@@ -1,10 +1,6 @@
 import Button from "../../components/button/Button";
 import React, { useEffect } from "react";
-import {
-  loadFacebookSDK,
-  loginWithFacebook,
-  getUserPosts,
-} from "../../utils/FacebookLogin";
+import { loadFacebookSDK, loginWithFacebook } from "../../utils/FacebookLogin";
 
 const Home: React.FC = () => {
   useEffect(() => {

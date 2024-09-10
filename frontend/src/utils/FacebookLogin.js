@@ -34,8 +34,12 @@ export function loginWithFacebook(callback) {
   });
 }
 
-export function getUserPosts() {
-  window.FB.api(`/${userId}/posts`, "GET", {}, function (response) {
-    console.log(response); // Returns user's posts
-  });
-}
+// export function getUserPosts() {
+//   window.FB.api(`/${userId}/posts`, "GET", {}, function (response) {
+//     console.log(response); // Returns user's posts
+//   });
+// }
+
+// export function loginWithInstagram() {
+
+// }
