@@ -7,12 +7,10 @@ import {
 } from "../../utils/FacebookLogin";
 
 const Home: React.FC = () => {
-  const [isSdkLoaded, setIsSdkLoaded] = useState(false);
-
   useEffect(() => {
     // Load the Facebook SDK and mark it as loaded
     loadFacebookSDK(process.env.REACT_APP_FACEBOOK_APP_ID, () => {
-      setIsSdkLoaded(true);
+      console.log("hit");
     });
   }, []);
   const handleLoginButtonClick = () => {
