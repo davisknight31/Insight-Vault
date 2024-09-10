@@ -1,5 +1,5 @@
 import Button from "../../components/button/Button";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   loadFacebookSDK,
   loginWithFacebook,
@@ -19,9 +19,9 @@ const Home: React.FC = () => {
     });
   };
 
-  const handleGetPostsButtonClick = () => {
-    getUserPosts();
-  };
+  //   const handleGetPostsButtonClick = () => {
+  //     getUserPosts();
+  //   };
 
   return (
     <div className="w-2/5 m-auto">
